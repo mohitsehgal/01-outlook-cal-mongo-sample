@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const config = require("./config");
-const port = config.PORT || 3000;
+const port = config.port || 3000;
 const path = require("path");
 const outlookRouter = require("./outlook-router");
 app.get("/", (req, res) => {
